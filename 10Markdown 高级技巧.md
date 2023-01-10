@@ -79,7 +79,7 @@ $$
 \end{CD}
 $$
 
-## 扩展
+## 其他图形
 
 对markdown支持的软件会对标准做扩展，例如可以绘制流程图、时序图、甘特图等。
 
@@ -92,7 +92,7 @@ A[方形] -->B(圆角)
     C -->|a=2| E[结果2]
     F[横向流程图]
 ```
-2、竖向流程图源码格式：
+**2、竖向流程图源码格式：**
 ```mermaid
 graph TD
 A[方形] --> B(圆角)
@@ -101,7 +101,7 @@ A[方形] --> B(圆角)
     C --> |a=2| E[结果2]
     F[竖向流程图]
 ```
-3、标准流程图源码格式：
+**3、标准流程图源码格式：**
 ```flow
 st=>start: 开始框
 op=>operation: 处理框
@@ -113,7 +113,7 @@ st->op->cond
 cond(yes)->io->e
 cond(no)->sub1(right)->op
 ```
-4、标准流程图源码格式（横向）：
+**4、标准流程图源码格式（横向）：**
 ```flow
 st=>start: 开始框
 op=>operation: 处理框
@@ -125,7 +125,7 @@ st(right)->op(right)->cond
 cond(yes)->io(bottom)->e
 cond(no)->sub1(right)->op
 ```
-5、UML时序图源码样例：
+**5、UML时序图源码样例：**
 ```sequence
 对象A->对象B: 对象B你好吗?（请求）
 Note right of 对象B: 对象B的描述
@@ -133,7 +133,7 @@ Note left of 对象A: 对象A的描述(提示)
 对象B-->对象A: 我很好(响应)
 对象A->对象B: 你真的好吗？
 ```
-6、UML时序图源码复杂样例：
+**6、UML时序图源码复杂样例：**
 ```sequence
 Title: 标题：复杂使用
 对象A->对象B: 对象B你好吗?（请求）
@@ -147,7 +147,7 @@ Note over 小三,对象B: 我们是朋友
 participant C
 Note right of C: 没人陪我玩
 ```
-7、UML标准时序图样例：
+**7、UML标准时序图样例：**
 ```mermaid
 %% 时序图例子,-> 直线，-->虚线，->>实线箭头
   sequenceDiagram
@@ -162,7 +162,7 @@ Note right of C: 没人陪我玩
     王五->李四: 你怎么样?
     李四-->王五: 很好!
 ```
-8、甘特图样例：
+**8、甘特图样例：**
 ```mermaid
 %% 语法示例
         gantt
